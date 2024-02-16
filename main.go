@@ -27,7 +27,7 @@ func SortSlice(slice []int) []int {
 }
 
 func IncrementOdd(slice []int) []int{
-    for i := 0; i < len(slice); i += 2 {
+    for i := 1; i < len(slice); i += 2 {
         slice[i]++
     }
 	return slice
@@ -57,7 +57,7 @@ func AppendFunc(dst func([]int), src ...func([]int)) func([]int) {
 }
 
 func IncrementOdd1(slice []int){
-    for i := 0; i < len(slice); i += 2 {
+    for i := 1; i < len(slice); i += 2 {
         slice[i]++
     }
 }
